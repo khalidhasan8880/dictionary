@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary</title>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@latest/dist/tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- goole icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   <body class="bg-gray-200">
     <div class="container mx-auto pt-16 pb-8">
@@ -19,10 +21,9 @@
                 placeholder="Search for a word"
               />
               <button
+                onclick="search()"
                 type="submit"
-                class="bg-blue-500 text-white px-4 py-2 ml-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
-              >
-                Search
+                class="bg-blue-500 text-white px-4 py-2 ml-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Search
               </button>
             </div>
           </div>
@@ -31,9 +32,8 @@
           <div class="mt-4">
             <div>
                 <div id="word-details-container">
-
                 </div>
-                <h2 class="text-2xl font-bold text-gray-800">Word Definition</h2>
+                <h2 class="text-2xl my-5 font-bold text-gray-800">Word Definition</h2>
                 <div id="parts">
 
                 </div>
@@ -41,6 +41,10 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- loading -->
+    <div id="loading" class="hidden h-screen">
+      <h4 class="text-3xl text-center">Loading...</h4>
     </div>
     <script src="js/script.js"></script>
   </body>
