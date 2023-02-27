@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@latest/dist/tailwind.min.css" />
+  </head>
+  <body class="bg-gray-200">
+    <div class="container mx-auto pt-16 pb-8">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="px-6 py-4">
+          <h1 class="text-3xl font-bold text-gray-800">Dictionary</h1>
+          <div class="mt-4">
+            <div class="flex items-center">
+              <input id="input"
+                type="text"
+                class="px-4 py-2 w-full rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                placeholder="Search for a word"
+              />
+              <button
+                type="submit"
+                class="bg-blue-500 text-white px-4 py-2 ml-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="px-6 py-4">
+          <div class="mt-4">
+            <div>
+                <div id="word-details-container">
+
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800">Word Definition</h2>
+                <div id="parts">
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
